@@ -1,29 +1,55 @@
+* { margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
     background-image:url(darren-nunis-cxE7SXKnzv0-unsplash.jpg) ;
     background-color: rgb(255, 255, 255); 
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
     width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+h1{
+    color:rgb(231, 34, 165);
+    margin-top: 100px;
+    font-style: italic;
+}
+p{
+    color:rgb(231, 34, 165);
+    font-size: 20px;
+    font-style: italic;
+
+}
 h1,p,form,ul{
     display:flex;
     justify-content:center;
-    padding-top: 2%;
+    margin-bottom: 20px;
 
 }
-.texte{
+
+p{
     font-size: 20px;
     font-family:verdana;
-
+    text-align: justify;
 }
+#champ{
+    font-size: 20px;
+}
+
 #btnAjouter{
-    background-color: pink;
+    background-color: palevioletred;
+    color: white;
+    font-style: italic;
     cursor: pointer;
     transition: 0.4s;
+    font-size: 20px;
 }
 #btnAjouter:hover {
     opacity: 0.8;
@@ -33,12 +59,29 @@ h1,p,form,ul{
 }
 #list {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+}
+li,.edit-btn,.supp-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+} 
+.supp-btn{
+    background-color: red ;
+}
+.edit-btn{
+    background-color: yellowgreen;
+}
+li{
+    background-color: palevioletred;
 }
 
-
-/* 
-.img {
-    
-   
-    
+/* .delete{
+    display: none;
 } */
+

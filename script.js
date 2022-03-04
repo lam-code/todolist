@@ -15,6 +15,16 @@ form.onsubmit = () =>{
     editButton.innerText = "Editer";
     editButton.classList.add("edit-btn");
     list.appendChild(editButton);
+    
+    
+    editButton.addEventListener("click", function modifier(e) {
+        // e.preventDefault();
+        const addInput = document.createElement("input");
+        addInput.type = "text";
+        addInput.innerText = li.value;
+        li.appendChild(addInput);
+        
+    });
 
     // bouton supprimer
 
@@ -22,19 +32,21 @@ form.onsubmit = () =>{
     suppButton.innerText = "Supprimer";
     suppButton.classList.add("supp-btn");
     list.appendChild(suppButton);
-    li.appendChild(editButton, suppButton);
+    li.appendChild(editButton);
+    suppButton.addEventListener("click",supprimer);
+    li.appendChild(suppButton);
+
+    function supprimer(){
+        li.remove();
+    }
+    
 
     list.appendChild(li);
     champ.value="";
     return false;
-
-    editButton.addEventListener('click',()=>{
-        
-
-
-
-    })
-
 }
+
+
+
 
 
