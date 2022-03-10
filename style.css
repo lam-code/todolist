@@ -17,7 +17,7 @@ body{
     flex-direction: column;
 }
 h1{
-    color:rgb(231, 34, 165);
+    color:red;
     margin-top: 100px;
     font-style: italic;
 }
@@ -38,6 +38,7 @@ p{
     font-size: 20px;
     font-family:verdana;
     text-align: justify;
+  
 }
 #champ{
     font-size: 20px;
@@ -45,7 +46,7 @@ p{
 
 #btnAjouter{
     background-color: palevioletred;
-    color: white;
+    /* color: white; */
     font-style: italic;
     cursor: pointer;
     transition: 0.4s;
@@ -81,6 +82,8 @@ li{
     background-color: palevioletred;
 }
 
+
+/* alternative du bouton supprimer en css  */
 /* .delete{
     display: none;
 } */
